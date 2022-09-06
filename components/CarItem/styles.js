@@ -13,16 +13,47 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    marginBottom: 15,
   },
   headerIcon: {
     color: "#e6e8e7",
   },
   headerText: {
     color: "#e6e8e7",
-    fontWeight: "700",
+    fontWeight: "900",
     fontSize: 16,
     justifyContent: "center",
     alignItems: "center",
+  },
+  backgroundImage: {
+    height: "100%",
+    width: "100%",
+    resizeMode: "cover",
+    position: "absolute",
+  },
+  batterySection: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  batteryImage: {
+    height: 26,
+    width: 45,
+    marginRight: 15,
+  },
+  batteryText: {
+    color: "#e6e8e7",
+    fontSize: 30,
+    fontWeight: "700",
+  },
+  status: {
+    alignItems: "center",
+  },
+  statusText: {
+    color: "#e6e8e7",
+    fontSize: 16,
+    fontWeight: "400",
+    marginTop: 7,
   },
 });
 
