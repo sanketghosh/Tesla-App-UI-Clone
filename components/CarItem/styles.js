@@ -55,6 +55,15 @@ const styles = StyleSheet.create({
     fontWeight: "400",
     marginTop: 7,
   },
+  controls: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  controlsButton: {},
+  controlButtonIcon: {
+    color: "#e6e8e7",
+  },
 });
 
 export default styles;
