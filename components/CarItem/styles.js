@@ -59,8 +59,15 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
+    marginTop: 130,
   },
-  controlsButton: {},
+  controlsButton: {
+    borderWidth: 1.5,
+    borderColor: "#e6e8e7",
+    borderRadius: 50,
+    padding: 15,
+    marginLeft: 20,
+  },
   controlButtonIcon: {
     color: "#e6e8e7",
   },
