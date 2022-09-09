@@ -5,6 +5,7 @@ import {
   ImageBackground,
   Image,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import styles from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-native-fontawesome";
@@ -62,38 +63,39 @@ const CarItem = () => {
       <View style={styles.status}>
         <Text style={styles.statusText}>Parked</Text>
       </View>
-
-      {/* controls icons  */}
-      <View style={styles.controls}>
-        <TouchableOpacity>
-          <View style={styles.controlsButton}>
-            <FontAwesomeIcon
-              style={styles.controlButtonIcon}
-              icon={faFan}
-              size={37}
-            />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity>
-          <View style={styles.controlsButton}>
-            <FontAwesomeIcon
-              style={styles.controlButtonIcon}
-              icon={faKey}
-              size={37}
-            />
-          </View>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={clickLockHandler}>
-          <View style={styles.controlsButton}>
-            <FontAwesomeIcon
-              style={styles.controlButtonIcon}
-              icon={locked ? faLock : faUnlockAlt}
-              size={37}
-            />
-          </View>
-        </TouchableOpacity>
-      </View>
-      <Menu />
+      <ScrollView>
+        {/* controls icons  */}
+        <View style={styles.controls}>
+          <TouchableOpacity>
+            <View style={styles.controlsButton}>
+              <FontAwesomeIcon
+                style={styles.controlButtonIcon}
+                icon={faFan}
+                size={37}
+              />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity>
+            <View style={styles.controlsButton}>
+              <FontAwesomeIcon
+                style={styles.controlButtonIcon}
+                icon={faKey}
+                size={37}
+              />
+            </View>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={clickLockHandler}>
+            <View style={styles.controlsButton}>
+              <FontAwesomeIcon
+                style={styles.controlButtonIcon}
+                icon={locked ? faLock : faUnlockAlt}
+                size={37}
+              />
+            </View>
+          </TouchableOpacity>
+        </View>
+        <Menu />
+      </ScrollView>
     </View>
   );
 };
