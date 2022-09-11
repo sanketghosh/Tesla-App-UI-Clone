@@ -1,3 +1,3 @@
-# CHATWARTZ
+# TESLA UI CLONE
 
-A cross platform chat application using React Native, Expo CLI and Firebase
+A cross platform mobile UI clone of the Tesla App using React Native and Expo CLI 
